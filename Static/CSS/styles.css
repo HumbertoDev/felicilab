@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #00ffe9,
+    #27ffeb,
+    #3affec,
+    #47ffee,
+    #53ffef,
+    #53fdf2,
+    #54fcf4,
+    #56faf6,
+    #51f6f9,
+    #4df1fc,
+    #4cedfe,
+    #4ee8ff
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 8pxs;
+}
+
+.glass-morphism-efect {
+  /* efecto */
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  box-shadow: 0 8px 25px 0 rgba(31, 38, 135, 0.13);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 25px;
+  z-index: 2;
+  /* formato  a los elementos internos*/
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+/* DISEÑO DEL  MENU */
+
+.menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* colors */
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur() 15px;
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 25px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.brand p {
+  font-size: 1.2rem;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin: 60px;
+}
+
+.link h2 {
+  color: rgba(0, 122, 185);
+  padding-left: 13px;
+}
+
+/* DISEÑO DEL CONTENIDO */
+
+.content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-media h1 {
+    font-size: 1.5rem;
+    color: rgba(0, 122, 185, 0.8);
+}
+
+.sm-icons {
+  display: flex;
+  align-items: center;
+}
+
+.sm-icons img {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.favorites-box {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.favorites-box h2 {
+    font-size: 3rem;
+    color: rgba(255, 157, 226);
+    margin: 30px 0 30px 0;
+}
+
+.favorite {
+    position: relative;
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.favorite-image {
+    display: block;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.favorite-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.8)
+    );
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: white;
+}
+
+.favorite-overlay:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+/* FORMAS DE FONDO */
+.circle1 {
+  background: white;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.8)
+  );
+  width: 350px;
+  height: 350px;
+  border-radius: 300px;
+  position: absolute;
+  top: 7%;
+  right: 13%;
+}
+
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to top right,
+    rgba(0, 122, 185, 0.8),
+    rgba(0, 122, 185, 0.4)
+  );
+  width: 199px;
+  height: 199px;
+  border-radius: 100px;
+  position: absolute;
+  bottom: 40%;
+  left: 14%;
+}
+
+.rombo1 {
+  background: white;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 157, 226, 0.7),
+    rgba(255, 157, 226, 1)
+  );
+  width: 230px;
+  height: 230px;
+  border-radius: 23px;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 7%;
+  left: 53%;
+}
+
+.rombo2 {
+  background: white;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 157, 226, 0.85),
+    rgba(255, 157, 226, 1)
+  );
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 6%;
+  left: 25%;
+}
